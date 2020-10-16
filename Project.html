@@ -1,0 +1,152 @@
+<html>
+<head>
+<title>Assignment 3: Group site</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<style>
+
+
+.sidebar {
+  position: fixed;
+  width: 200px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #FFF5EE;
+  padding-top: 40px;
+
+}
+
+.sidebar h3{
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  color: #FFA500;
+}
+
+.sidebar a{
+  display: block;
+  padding: 10px 20px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #696969;
+}
+
+.content {
+  margin-left: 210px;
+  width: auto;
+  padding-top: 60px;
+}
+
+.content a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: #FFA500;
+
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  font-style: italic;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  padding-left: 20px;
+
+}
+
+.project {
+  max-width: 800px;
+  padding: 20px;
+
+}
+
+</style>
+</head>
+
+<body>
+
+  <div class="sidebar">
+    <h3>Team Tekkerz</h3>
+    <a href="Index.html">Home</a>
+    <a href="Jobs.html">Ideal Jobs</a>
+    <a href="Industry.html">Industry Data</a>
+    <a href="Interview.html">The Interview</a>
+    <a href="Technologies.html">Technologies</a>
+    <a href="Project.html">Our Project</a>
+    <a href="Reflections.html">Reflections</a>
+    <a href="References.html">References</a>
+
+</div>
+
+  <div class="content">
+
+<div class="project">
+  <h1> Group Project</h1>
+    <h2>Overview</h2><br>
+<p>Our project will involve a piece of hardware that could be built into water storage devices (Cattle troughs, tanks) to remotely assess the levels of water through an application to run on either a smart phone or computer. It will involve work with both hardware elements that will be used on site alongside an application to transmit data remotely and wirelessly.<br>
+   These readings will be done via a microcontroller device that would need to be put inside of the water storage vessel and would rely on either pressure or a buoyancy device to function. These features will allow people who live long distances from water sources such as farmers with bodies of water a long way from residences to check levels of water easily from a smartphone or computer rather than needing to physically check the source.<br>
+   This in turn will hopefully allow them to save time, money and allow solutions to be planned before problems occur (such as a drought). It also has relevance as a humanitarian style device used in poorer countries to monitor water storage levels and allow foreplanning for local community needs.</p>
+
+<h2>Motivation</h2>
+<p>This should be a description of why the project will be interesting or useful. This may include statistics or other evidence, such as: "There service. are 1.5 billion cat owners in Australia, and so there is a huge market for an automated cat feeder. Using Raspberry Pi technology is a cheap and easily assembled solution to this problem."<br>
+Growing up in Australia we knew the struggle of having to constantly check and maintain water sources during the peak heat of our summer. With an estimated 135,000 farming properties Australia wide, this product could be utilised by a huge range of people and would make it extremely viable due to harsh and contrasting weather conditions in rural Australia.<br>
+ Knowing this we believe this product provides an extremely interesting solution to a common problem in water storage. To fix such a problem would allow thousands of people to save time, money and resources majorly benefiting Australia’s agricultural industry hence our motivation to build a solution to this common problem.<br>
+Alongside this integral reasoning is the fact we believe this device could majorly benefit the lives of individuals worldwide in their pursuit for safe and reliable water management solutions. To allow less advantaged communities access to a cheap and easy to operate/maintain device they will no longer need to worry about water storage, something which our group found extremely relevant and meaningful to solve.
+</p>
+
+<h2>Description</h2>
+<p>As mentioned previously the project would need to be split into two halves, software and hardware. The software side of the project would involve algorithms to calculate the actual water level and must also be able to then transmit those values to a receiver which will most likely be a desktop GUI or mobile application.<br>
+   The hardware side will require a device to be fitted inside a water storage device and would either use pressure sensing technology or a flotation device which could sense a specific water level. As the water level rises or falls the inbuilt computer has a microprocessor that can calculate the water level at any one point in time.<br>
+  This would require the device to be waterproof and able to withstand a certain amount of water pressure at any one time. To overcome this the device would be provided in a small air/watertight container and could be easily transported to any size water storage container as required. These different options of installation are offered as different packages and would suit different situations.<br>
+  The microcontroller within the package would utilise Visual Studio to create an algorithm based upon either the pressure that the vessel faces at a point in time or based upon the height of the buoyancy device. To begin with we believe that the buoyancy option would provide the easiest solution and would work similarly to a buoyancy valve to shut water flow on and off.<br>
+   The device would be stored near the inlet at the roof of the storage solution and would have a buoy connected to it via some kind of non-rust pivoting metal. When first putting the device in the water it could be paired via phone or computer where the maximum capacity of that particular storage and dimensions could be entered. Once determined the microcontroller could calculate based on a predetermined formula the volume of the tank.<br>
+  As the buoy rose or fell the value would constantly be updated via the controller and would then be transmitted via wireless signal. From there the device would then transmit the calculated data directly to the user no matter the distance from the storage device, over extremely long distances this may require repeaters to be placed periodically to stop the signal from dropping out.<br>
+   Another option, (Although a little more costly) would be for users’ great distances from the tank to utilise satellite technology to transmit signals no matter the distance. This would also be implemented for people living in mountainous or hilly terrain where straight line transmission would not be feasible. This would pose some challenges as we would need to ensure that the device is operating within a frequency that does not clash with radio/telephone frequencies nearby to avoid external noise. After assessing all the options this provides multiple paths for both the hardware and software applications. The GUI would allow the device owner to easily track and monitor multiple different water storage devices at any one time. An alert system would notify the individual if a tank got below a certain level dictated by the user and relevant action could be taken. <br>
+   If the product were to gain more traction a phone application could be brought into place to allow users to check their data from anywhere as well as receive updates and warnings straight to their phone rather than to a desktop computer.
+</p>
+
+<h2>Tools and Technologies</h2>
+<p>For this project to be successful it would need aspects of both software and hardware. The hardware could utilise features of an Arduino or raspberry pi. Both devices have wireless transmitting capabilities and could also use their inbuilt chips to do calculations and find specific water values. Alongside this would be an inherent need for some software both in the calculations part and some way for the user to easily access this data.<br>
+   We believe this could be in the form of a basic GUI which could be programmed using MATLAB and easily accessible on desktop computers. If the project had vested interest from stakeholders, this could be converted to create a mobile application and allow people to access their data on the go. All of the above solutions are going to need both servers to store the data and a network to transfer the data.<br>
+    We have explored options and depending on the scale of the project we could invest in cheaper cloud computing or a dedicated physical server. This would be decided once we had gathered some traffic data and worked out specific needs for a large range of customers.
+</p>
+
+<h2>Skills Required</h2>
+<p>There will be both software and hardware aspects to a project like this. The software would be split into two parts, the GUI/App and the code on the device measuring the water levels. The software required for this could be as simple as MATLAB or Visual Studio which are both more than capable of being able to write and solve complex algorithms. Furthermore, MATLAB has an inbuilt GUI designer and could also be used in conjunction with the code created to create a fully fledged app.<br>
+   This part of the project could be done easily by a large range of people and would not require any specialist skills. The design and implementation of the hardware however may prove to be more challenging. To begin the hardware would need to be sourced at as cheaper price as possible this may prove a challenge as some parts required such as the onboard transmitter and computer could be expensive. This would need to be carefully thought about before diving in headfirst.<br>
+    Furthermore, we would need to be able to consider how data would be stored and transferred from the hardware device to remote desktops. This would need specialist skills which our group believes we do not possess as of yet. Servers would need to be set up to store data as well as figure out how data would be remotely exchanged and kept secure for each individual user. Good networking skills would be required for this and perhaps even more specialist skills if we were to decide that satellite transfer could be used over longer and more topologically diverse terrain. This would be especially relevant when determining how data will be transferred safely and securely without loss of information. It would also need to fit within ACMA (Australian Communications and Media Authority) regulations and could perhaps utilise the ISM (Industrial Scientific Medical) bandwidth to transfer data at as cheaper cost as possible without having to purchase large amounts of bandwidth.
+</p>
+
+<h2>Outcome</h2>
+<p>If this project were to be successful it would provide an easy monitoring system for farmers all over Australia and perhaps even disadvantaged communities worldwide. It can save farmers lots of time and resources as well as a functionality that could be used worldwide to help monitor water storage levels on a small scale. This leads to a mountain of possibilities and absolutely solves a known problem, especially in the agricultural industry.<br>
+   Furthermore, developments into cheaper and easy to use alternatives could be implemented into poorer countries to allow them the easiest access to water levels. This would have an incredible impact on their daily lives allowing them to plan ahead for farming or community needs and could allow restrictions to be put into place if water levels were becoming dire.
+</p>
+</div>
+
+  </div>
+
+
+</body>
+
+</html>
